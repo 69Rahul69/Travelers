@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(rj.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{text-decoration: none;
+    padding: 5px 20px;
+    color: aliceblue;
+border: 1px solid rgb(219, 238, 235);
+border-radius: 5px;
+transition: 0.5s ease;
+margin-left: 20px;
+
+}
+ul li a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.logo img{
+    float: left;
+    height: 70px;
+    width: auto;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    font-size: 70px;
+    color: aliceblue;
+}
+.btn{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%)
+}
+.b{
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 00.5s ease;
+}
+.b:hover{
+    background-color: #fff;
+    color: #000;
+}
+.change{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+   color: #fff;
+   font-size: 25PX;
+}
+
+.changec:after{
+    content:'' ;
+    animation: changetext  10s infinite linear;
+    color: #00B894;
+
+}
+@keyframes changetext {
+    0%{content: "DARJELING";}  
+    20%{content: "AGRA";}  
+    35%{content: "JAIPUR";}  
+    60%{content: "KERALA";}  
+    80%{content: "DELHI";}  
+    100%{content: "MUMBAI";}  
+}
